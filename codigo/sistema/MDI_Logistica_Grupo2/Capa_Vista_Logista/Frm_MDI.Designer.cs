@@ -38,6 +38,11 @@
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.consultaBitacoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cambiarContraseñaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crearUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoAplicacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.permisoDeAplicacionesAUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Pnl_Superior.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -108,6 +113,12 @@
             // 
             // seguridadToolStripMenuItem
             // 
+            this.seguridadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.consultaBitacoraToolStripMenuItem,
+            this.cambiarContraseñaToolStripMenuItem,
+            this.crearUsuariosToolStripMenuItem,
+            this.mantenimientoAplicacionesToolStripMenuItem,
+            this.permisoDeAplicacionesAUsuariosToolStripMenuItem});
             this.seguridadToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
             this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(98, 24);
@@ -130,6 +141,36 @@
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
             this.toolStripStatusLabel.Size = new System.Drawing.Size(54, 20);
             this.toolStripStatusLabel.Text = "Estado";
+            // 
+            // consultaBitacoraToolStripMenuItem
+            // 
+            this.consultaBitacoraToolStripMenuItem.Name = "consultaBitacoraToolStripMenuItem";
+            this.consultaBitacoraToolStripMenuItem.Size = new System.Drawing.Size(358, 26);
+            this.consultaBitacoraToolStripMenuItem.Text = "Consulta Bitacora";
+            // 
+            // cambiarContraseñaToolStripMenuItem
+            // 
+            this.cambiarContraseñaToolStripMenuItem.Name = "cambiarContraseñaToolStripMenuItem";
+            this.cambiarContraseñaToolStripMenuItem.Size = new System.Drawing.Size(358, 26);
+            this.cambiarContraseñaToolStripMenuItem.Text = "Cambiar Contraseña";
+            // 
+            // crearUsuariosToolStripMenuItem
+            // 
+            this.crearUsuariosToolStripMenuItem.Name = "crearUsuariosToolStripMenuItem";
+            this.crearUsuariosToolStripMenuItem.Size = new System.Drawing.Size(358, 26);
+            this.crearUsuariosToolStripMenuItem.Text = "Crear Usuarios";
+            // 
+            // mantenimientoAplicacionesToolStripMenuItem
+            // 
+            this.mantenimientoAplicacionesToolStripMenuItem.Name = "mantenimientoAplicacionesToolStripMenuItem";
+            this.mantenimientoAplicacionesToolStripMenuItem.Size = new System.Drawing.Size(358, 26);
+            this.mantenimientoAplicacionesToolStripMenuItem.Text = "Mantenimiento Aplicaciones";
+            // 
+            // permisoDeAplicacionesAUsuariosToolStripMenuItem
+            // 
+            this.permisoDeAplicacionesAUsuariosToolStripMenuItem.Name = "permisoDeAplicacionesAUsuariosToolStripMenuItem";
+            this.permisoDeAplicacionesAUsuariosToolStripMenuItem.Size = new System.Drawing.Size(358, 26);
+            this.permisoDeAplicacionesAUsuariosToolStripMenuItem.Text = "Permiso de aplicaciones a usuarios";
             // 
             // Frm_MDI
             // 
@@ -172,5 +213,10 @@
         private System.Windows.Forms.ToolStripMenuItem entregaDeCompraToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
+        private System.Windows.Forms.ToolStripMenuItem consultaBitacoraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cambiarContraseñaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem crearUsuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenimientoAplicacionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem permisoDeAplicacionesAUsuariosToolStripMenuItem;
     }
 }

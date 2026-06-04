@@ -83,5 +83,5 @@ namespace Capa_Vista_manteRecu
             }
         }
     }
-    }
-}
+ }
+
