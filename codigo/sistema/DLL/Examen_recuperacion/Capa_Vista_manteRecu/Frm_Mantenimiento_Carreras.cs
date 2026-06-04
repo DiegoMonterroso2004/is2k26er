@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Capa_Vista_manteRecu
 {
@@ -54,5 +55,33 @@ namespace Capa_Vista_manteRecu
             navegador1.SEtiquetas = sEtiquetas;
             navegador1.mostrarDatos();
         }
+
+        private void Btn_Ayuda_Click(object sender, EventArgs e)
+        {
+            string carpeta = Application.StartupPath;
+
+            while (!Directory.Exists(Path.Combine(carpeta, "ayudas")) &&
+                   Directory.GetParent(carpeta) != null)
+            {
+                carpeta = Directory.GetParent(carpeta).FullName;
+            }
+
+            string rutaAyuda = Path.Combine(
+                carpeta,
+                "ayudas",
+                "ExamenF",
+                "Ayuda_BOM.chm"
+            );
+
+            if (File.Exists(rutaAyuda))
+            {
+                Help.ShowHelp(this, rutaAyuda, "Cliente.html");
+            }
+            else
+            {
+                MessageBox.Show("No se encontró:\n" + rutaAyuda);
+            }
+        }
+    }
     }
 }
