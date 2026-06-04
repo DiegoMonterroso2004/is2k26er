@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Capa_Vista_Seguridad;
 using Capa_Controlador_Seguridad;
 using System.Drawing.Imaging;
-
+using Capa_Vista_manteRecu;
 
 namespace Capa_Vista_Logista
 {
@@ -138,6 +138,53 @@ namespace Capa_Vista_Logista
             this.Close();
         }
 
-      
+        private void consultaBitacoraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Bitacora frm = new Frm_Bitacora();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void cambiarContraseñaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_cambiar_contrasena frm = new Frm_cambiar_contrasena(1);
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void crearUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Usuario frm = new Frm_Usuario();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void mantenimientoCarrerasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Mantenimiento_Carreras frm = new Frm_Mantenimiento_Carreras();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void mantenimientoAplicacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Mantenimiento_Carreras frm = new Frm_Mantenimiento_Carreras();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void permisoDeAplicacionesAUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_asignacion_aplicacion_usuario asig_app_user = new Frm_asignacion_aplicacion_usuario();
+            asig_app_user.MdiParent = this;
+            asig_app_user.Show();
+        }
+
+        private void consultarBitacoraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Mantenimiento_Carreras frm = new Frm_Mantenimiento_Carreras();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
